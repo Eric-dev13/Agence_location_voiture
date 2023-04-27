@@ -1,3 +1,6 @@
+.display-none {
+  display: none; }
+
 header {
   background: url("../images/background.jpg") no-repeat;
   height: 500px;
@@ -5,13 +8,35 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  color: white; }
-  header > div > h1 {
-    margin-bottom: 0;
-    text-align: center; }
-  header > div > p {
-    text-align: center; }
+  justify-content: space-around; }
+  header > div.header__navbar {
+    width: 100%;
+    position: relative; }
+    header > div.header__navbar .header__navbar__burger {
+      display: flex;
+      justify-content: flex-end; }
+      header > div.header__navbar .header__navbar__burger img {
+        margin-right: 20px;
+        border: 1px solid gray;
+        width: 50px; }
+    header > div.header__navbar nav.header__navbar__navigate {
+      background-color: white;
+      width: 100%;
+      position: absolute; }
+      header > div.header__navbar nav.header__navbar__navigate > ul {
+        list-style: none; }
+        header > div.header__navbar nav.header__navbar__navigate > ul > li {
+          height: 30px; }
+          header > div.header__navbar nav.header__navbar__navigate > ul > li a {
+            text-decoration: none;
+            color: gray; }
+  header > div {
+    color: white; }
+    header > div > h1 {
+      margin-bottom: 0;
+      text-align: center; }
+    header > div > p {
+      text-align: center; }
   header > form {
     width: 95%; }
     header > form > .form-container {

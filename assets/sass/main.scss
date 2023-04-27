@@ -1,3 +1,7 @@
+.display-none{
+    display: none;
+}
+
 header {
     background: url("../images/background.jpg") no-repeat;
     height: 500px;
@@ -6,9 +10,68 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: white;
+
+    &>div.header__navbar {
+        width: 100%;
+        position: relative;
+
+        & .header__navbar__burger {
+            display: flex;
+            justify-content: flex-end;
+
+            & img {
+                margin-right: 20px;
+                border: 1px solid gray;
+                width: 50px;
+            }
+        }
+
+        & nav.header__navbar__navigate {
+            background-color: rgba(255, 255, 255, 1);
+            width: 100%;
+            position:absolute;
+
+
+            &>ul {
+                list-style: none;
+                // padding:0;
+
+                &>li {
+                    height: 30px;
+
+
+                    & a {
+                        text-decoration: none;
+                        // font-weight: 800;
+                        color: gray;
+                    }
+
+                    // a:hover {
+                    //     color: rgb(100, 23, 23);
+                    // }
+
+                    // a:active {
+                    //     color: yellow;
+                    // }
+
+                    // a:link {
+                    //     color: gray;
+                    // }
+
+                    // a:visited {
+                    //     color: white;
+                    // }
+
+
+                }
+            }
+
+        }
+    }
 
     &>div {
+        color: white;
+
         &>h1 {
             margin-bottom: 0;
             text-align: center;
