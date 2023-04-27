@@ -92,6 +92,8 @@ main > section {
     display: flex;
     justify-content: flex-start;
     align-items: center; }
+    main > section .carousel a:nth-child(1) {
+      text-align: right; }
     main > section .carousel > img {
       width: 80%; }
     main > section .carousel a > img.carousel-btn {
