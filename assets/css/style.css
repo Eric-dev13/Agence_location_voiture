@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   background: url("../images/background.jpg") no-repeat;
   height: 500px;
@@ -16,7 +15,7 @@ header {
   header > form {
     width: 95%; }
     header > form > .form-container {
-      background-color: rgba(128, 128, 128, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
       padding: 5px; }
     header > form a {
       background-color: rgba(75, 223, 75, 0.5);
@@ -43,46 +42,81 @@ header {
     width: 100%;
     padding: 5px 10px;
     border-radius: 5px 0 0 5px; }
-  .input-group span,
-  .input-group label {
+  .input-group span {
     background-color: #d6d6d6;
-    padding: 5px 20px;
-    border: 1px solid #b3b3b3;
+    padding: 5px 12px;
     border-radius: 0 5px 5px 0; }
+    .input-group span img {
+      height: 15px;
+      width: 15px; }
+
+main > section:nth-child(1) {
+  margin-bottom: 0;
+  justify-content: space-between; }
 
 main > section {
+  margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
-  width: 100%; }
-  main > section .col1 .véhicule {
-    text-align: center;
-    position: relative; }
-    main > section .col1 .véhicule > img {
-      width: 80%; }
-    main > section .col1 .véhicule .navigation {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      main > section .col1 .véhicule .navigation img {
-        width: 20px; }
-  main > section .col2 {
+  justify-content: space-evenly;
+  align-items: center; }
+  main > section .form-select {
+    font-size: 0.7em; }
+  main > section h4 {
+    margin-left: 10px; }
+  main > section .carousel {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid red;
-    padding: 0 10px; }
-    main > section .col2 a {
-      background-color: rgba(31, 110, 31, 0.8);
-      text-align: center;
-      text-decoration: none;
-      display: block;
-      color: white;
+    justify-content: flex-start;
+    align-items: center; }
+    main > section .carousel > img {
+      width: 80%; }
+    main > section .carousel a > img.carousel-btn {
+      width: 30%; }
+  main > section .information {
+    display: flex; }
+    main > section .information .description {
+      display: none; }
+      main > section .information .description p {
+        font-size: 0.8em; }
+    main > section .information form {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: flex-end;
+      align-items: flex-start; }
+      main > section .information form a {
+        background-color: rgba(31, 110, 31, 0.8);
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 7px;
+        font-size: 0.8em;
+        width: 100px; }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header > form {
+    display: flex;
+    justify-content: space-around; }
+    header > form > div.form-container {
+      display: flex;
       width: 100%;
-      border-radius: 5px;
-      padding: 7px 0;
-      font-size: 0.8em;
-      box-shadow: 1px 1px 2px black; }
+      justify-content: space-around; }
+    header > form > a {
+      max-width: 200px; }
+  .form-select {
+    margin-bottom: 0;
+    margin-right: 5px;
+    width: auto; }
+  .input-group {
+    margin-bottom: 0;
+    margin-right: 5px; }
+    .input-group input {
+      width: auto; }
+  main > section .information {
+    flex-direction: column;
+    align-items: flex-start; }
+    main > section .information .description {
+      display: block; } }
+
+/* Large devices (desktops, 992px and up) */

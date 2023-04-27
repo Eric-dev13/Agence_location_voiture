@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/agence_loc.js" defer></script>
     <title>Location voiture</title>
 </head>
 
@@ -23,11 +24,11 @@
                 </select>
                 <div class="input-group">
                     <input type="text" placeholder="Début de location">
-                    <span></span>
+                    <span><img src="assets/images/calendrier.png" alt=""></span>
                 </div>
                 <div class="input-group">
                     <input type="text" placeholder="Fin de location">
-                    <span></span>
+                    <span><img src="assets/images/calendrier.png" alt=""></span>
                 </div>
             </div>
             <a href="#">Valider ma recherche</a>
@@ -36,28 +37,89 @@
 
     <main>
         <section>
-            <div class="col1">
-                <h4>7 résultats</h4>
-                <div class="véhicule">
-                    <img src="assets/images/vehicule1.png" alt="">
-                    <div class="navigation">
-                        <a href="#"><img src="assets/images/fleche-gauche.png" alt=""></a>
-                        <a href="#"><img src="assets/images/fleche-droite.png" alt=""></a>
-                    </div>
-                </div>
+            <h4>4 résultats</h4>
+            <form>
+                <select class="form-select">
+                    <option selected>Prix croissants</option>
+                    <option value="1"></option>
+                </select>
+            </form>
+        </section>
+
+        <section>
+            <div class="carousel">
+                <a href="#"><img src="assets/images/fleche-gauche.png" alt="" class="carousel-btn"></a>
+                <img class="carrousel" src="assets/images/vehicule1.png" alt="">
+                <a href="#"><img src="assets/images/fleche-droite.png" alt="" class="carousel-btn"></a>
             </div>
-            <div class="col2">
+            <div class="information">
+                <div class="description">
+                    <h3>Peugeot 208</h3>
+                    <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999 € - Agence de paris </p>
+                </div>
                 <form>
-                    <select class="form-select">
-                        <option selected>Prix croissants</option>
-                        <option value="1"></option>
-                    </select>
                     <a href="#">Réserver et Payer</a>
                 </form>
-
             </div>
         </section>
+
+        <section>
+            <div class="carousel">
+                <a href="#"><img src="assets/images/fleche-gauche.png" alt="" class="carousel-btn"></a>
+                <img class="carrousel" src="assets/images/vehicule2.png" alt="">
+                <a href="#"><img src="assets/images/fleche-droite.png" alt="" class="carousel-btn"></a>
+            </div>
+            <div class="information">
+                <div class="description">
+                    <h3>Ford focus</h3>
+                    <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999 € - Agence de paris </p>
+                </div>
+                <form>
+                    <a href="#">Réserver et Payer</a>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="carousel">
+                <a href="#"><img src="assets/images/fleche-gauche.png" alt="" class="carousel-btn"></a>
+                <img class="carrousel" src="assets/images/vehicule3.png" alt="">
+                <a href="#"><img src="assets/images/fleche-droite.png" alt="" class="carousel-btn"></a>
+            </div>
+            <div class="information">
+                <div class="description">
+                    <h3>Audi A1</h3>
+                    <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999 € - Agence de paris </p>
+                </div>
+                <form>
+                    <a href="#">Réserver et Payer</a>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="carousel">
+                <a href="#"><img src="assets/images/fleche-gauche.png" alt="" class="carousel-btn"></a>
+                <img class="carrousel" src="assets/images/vehicule4.png" alt="">
+                <a href="#"><img src="assets/images/fleche-droite.png" alt="" class="carousel-btn"></a>
+            </div>
+            <div class="information">
+                <div class="description">
+                    <h3>Opel Mokka</h3>
+                    <p>Diesel 5 portes, GPS, Autoradio, Forfait 1000 km (0.5/km supplémentaire).</p>
+                    <p>999 € - Agence de paris </p>
+                </div>
+                <form>
+                    <a href="#">Réserver et Payer</a>
+                </form>
+            </div>
+        </section>
+
     </main>
 </body>
+
 
 </html>
