@@ -4,13 +4,13 @@ Lancer le terminal dans le dossier `<Home>/.ssh`
 
 Création de la clé privée et publique : `ssh-keygen -o`
 
-Taper un nom pour la clé ex: github
+Taper un nom pour identifier la clé 
 
 Ne pas entrer de mot de passe sinon il faudra le renseigner à chaque fois.
 
-Une fois les 2 fichiers générés, ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : `cat ~/.ssh/id_rsa.pub`
+Une fois les 2 fichiers générés, ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : `cat ~/.ssh/<nom_pour_identifier_la_clé>.pub`
 
-Ce rendre sur github dans `settings/SSH/` new ssh key et ajouter la clé.
+Ce rendre sur github dans `settings/SSH/` new ssh key et ajouter la clé publique.
 
 
 ---
