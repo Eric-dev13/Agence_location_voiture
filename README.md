@@ -10,7 +10,7 @@ Ne pas entrer de mot de passe sinon il faudra le renseigner à chaque fois.
 
 Une fois les 2 fichiers générés, ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : `cat ~/.ssh/id_rsa.pub`
 
-Ce rendre sur github dans `settings/SSH/` new ssh key
+Ce rendre sur github dans `settings/SSH/` new ssh key et ajouter la clé.
 
 
 
