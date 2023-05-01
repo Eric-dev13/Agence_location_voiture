@@ -1,4 +1,20 @@
-﻿# Agence de location voiture
+﻿# Acceder au dépot Github en SSH
+
+Lancer le terminal dans le dossier `<Home>/.ssh`
+
+Création de la clé privée et publique : `ssh-keygen -o`
+
+Taper un nom pour la clé ex: github
+
+Ne pas entrer de mot de passe sinon il faudra le renseigner à chaque fois.
+
+Une fois les 2 fichiers générés, ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : `cat ~/.ssh/id_rsa.pub`
+
+Ce rendre sur github dans `settings/SSH/` new ssh key
+
+
+
+# Agence de location voiture
  
  [![](https://github.com/Eric-dev13/Agence_location_voiture/blob/main/assets/images/background.jpg)]( https://eric-dev13.github.io/Agence_location_voiture/)
 
