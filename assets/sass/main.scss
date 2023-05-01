@@ -18,10 +18,11 @@ header {
         & .header__navbar__burger {
             display: flex;
             justify-content: flex-end;
+            filter: invert(1);
 
             & img {
                 margin-right: 20px;
-                border: 1px solid gray;
+                // border: 1px solid gray;
                 width: 50px;
             }
         }

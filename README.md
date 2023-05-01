@@ -13,23 +13,48 @@ Je souhaite utiliser SASS (préprocesseur CSS), j'ai besoin de NPM (gestionnaire
 
 ## NPM
 
-Version : `npm -v`
+Version de npm : `npm -v`
 
-Initialiser un projet : `npm init -y` 
+Initialiser un projet : `npm init <option>` 
+
+Options :
 - `y` : si on veux pas repondre au question (nom, version ... de l'app)
 - Création d'un fichier `package.json`
 
-Installer une dépendance: `nmp install -g <nom_de_la_dependance>`
-- `g` : global (puex être lancé à partir de n'importe quel emplacement) sinon ne rien mettre et dispos seulement dans le projet.
+Installer une dépendance: `nmp install <options> <nom_de_la_dependance>`
 
-Installer NODE SASS : `npm install node-sass`
-- Npm génère le dossier `node_modules` et installe la dépendance.
+Options :
+- `-g` : Installation global (peux être lancé dans un terminal à partir de n'importe quel emplacement) sinon ne rien mettre et dispos seulement dans le projet.
+- `-D` : Développement - Installe la dépendance seulement pour ce projet
 
-Ajoute un script dans `package.json`
+INSTALLATION DE SASS
+
+NODE-SASS EST DEPRECIE DEPUIS LA VERSION 5 DE BOOTSTARP
+
+`npm install -D sass`
 ````
-"sass:compil": "node-sass assets/css/sass/main.scss assets/css/style.css",
-"sass:watch": "node-sass assets/sass/main.scss assets/css/style.css -w"
+Ajoute un script dans `package.json`
+"sass:watch": "sass assets/sass/main.scss assets/css/style.css -w"
 ````
 
 Puis on lance la compilation du `scss` en `css` : `npm run sass:watch`
+
+Installation d'hugo un générateur de site statique léger
+`npm install hugo-bin --save-dev`
+
+````
+npm run-script
+
+{
+  "scripts": {
+    "build": "hugo",
+    "create": "hugo new",
+    "serve": "hugo server"
+  }
+}
+````
+
+PREFIXER ()
+npm install postcss postcss-cli autoprefixer
+npx postcss *.css --use autoprefixer -d build/
 
