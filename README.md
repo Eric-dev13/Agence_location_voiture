@@ -2,15 +2,34 @@
 
 Lancer le terminal dans le dossier `<Home>/.ssh`
 
-Création de la clé privée et publique : `ssh-keygen -o`
+Création de la clé privée et publique : `ssh-keygen -t ed25519 -C "your_email@example.com"`
 
 Taper un nom pour identifier la clé 
 
 Ne pas entrer de mot de passe sinon il faudra le renseigner à chaque fois.
 
-Une fois les 2 fichiers générés, ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : `cat ~/.ssh/<nom_pour_identifier_la_clé>.pub`
+Une fois les 2 fichiers générés ajouter la clé SSH à ssh-agent, vérifiez que ssh-agent est en cours d’exécution
+
+````
+# start the ssh-agent in the background
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+````
+
+Ajoutez la clé privée SSH à ssh-agent.
+
+`$ ssh-add ~/.ssh/id_ed25519`
+
+
+Ouvrir le fichier avec un éditeur CLI (cat, nano vim ...) et copier la clé publique  : 
+
+` clip < ~/.ssh/id_ed25519.pub` ou  `cat ~/.ssh/<nom_pour_identifier_la_clé>.pub`
 
 Ce rendre sur github dans `settings/SSH/` new ssh key et ajouter la clé publique.
+
+Dans le champ « Titre », ajoutez une étiquette descriptive pour la  nouvelle clé. Par exemple, si vous utilisez un ordinateur portable  personnel, vous pouvez nommer cette clé « Ordinateur portable  personnel ».
+
+Sélectionnez le type de clé : authentification
 
 
 ---
